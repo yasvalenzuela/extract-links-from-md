@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/vpsa23/extract-links-from-md/issues"
   },
-  "homepage": "https://github.com/vpsa23/extract-links-from-md#readme"
+  "homepage": "https://github.com/vpsa23/extract-links-from-md#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  }
 }

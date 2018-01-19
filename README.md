@@ -4,6 +4,7 @@
 ExtractLinksFronMd trata de implementar un módulo de Node.js que reciba un string (en formato Markdown) y extraiga todos los links encontrados.
 
 ### Metodología del Trabajo
+
 * Herramienta de comunicación Slack y Whatsapp, para que nuestro trabajo no marcara una distancia entre cada una de las integrantes del grupo manteniendose así la planificación, producción y calidad de propuestas
 
 * Se utilizó la metodología Agile para así mejorar la eficiencia tanto en producción como en calidad de los productos finales.
@@ -13,5 +14,14 @@ ExtractLinksFronMd trata de implementar un módulo de Node.js que reciba un stri
 * ...
 
 ### Requerimientos Técnicos
+
 * Dependencias de Desarrollo 
-  + blablaksdkjdkjkdjekhdshd,hskjdhsgdjskhdjk
+  
+  + Package Json.
+  + 
+
+
+* Dependecias de Producción 
+  
+  + jQuery ~v.3.1.1
+  
