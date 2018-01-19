@@ -15,13 +15,14 @@ ExtractLinksFronMd trata de implementar un módulo de Node.js que reciba un stri
 
 ### Requerimientos Técnicos
 
-* Dependencias de Desarrollo 
+* Dependencias de Desarrollo
   
   + Package Json.
-  + 
+  + ESLint ~v.4.15.0
+  + Node Js
 
 
-* Dependecias de Producción 
+* Dependecias de Producción
   
   + jQuery ~v.3.1.1
-  
+  + Bootstrap ~v.4.0.0
