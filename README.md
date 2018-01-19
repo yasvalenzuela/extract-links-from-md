@@ -11,3 +11,7 @@ ExtractLinksFronMd trata de implementar un módulo de Node.js que reciba un stri
 * Creamos un Calendario con las actividades a cumplir para poder así seguir los pasos de la planificación de Laboratoria y llevar a cabo nuestro proyecto
 
 * ...
+
+### Requerimientos Técnicos
+* Dependencias de Desarrollo 
+  + blablaksdkjdkjkdjekhdshd,hskjdhsgdjskhdjk
