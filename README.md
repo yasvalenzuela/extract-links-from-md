@@ -1,38 +1,43 @@
-# extractLinksFromMd
+# Librería en Javascript
 
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+Una librería es un archivo o conjunto de archivos que se utilizan para facilitar la programación.
 
-***
 
-Implementar un módulo de Node.js que reciba un string (en formato Markdown) y
-extraiga todos los links encontrados. La implementación debe ser una función que
-recibe un string y devuelve un arreglo de objetos como se muestra en el este
-ejemplo:
+## Reto
+### ExtractLinksFronMd
 
-```js
-const extractLinksFromMd = require('extract-links-from-md');
-const str = `# Lorem ipsum
+ExtractLinksFronMd trata de crear nuestra propia librería para implementar un módulo de Node.js que reciba un string (en formato Markdown) y extraiga todos los links encontrados.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut [labore](https://en.wiktionary.org/wiki/labore) et
-[dolore](https://en.wiktionary.org/wiki/dolore) magna aliqua. Ut enim ad minim
-veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat.
+### Metodología del Trabajo
 
-[foo](http://foo.com)
+* Herramienta de comunicación Slack, para estar en constante comunicación y poder cumplir con nuestra planificación.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-culpa qui officia deserunt mollit anim id est laborum.`;
+* Se utiliza la metodología Agile para poder mejorar la eficiencia en relación al tiempo de producción y calidad del producto final.
 
-const links = extractLinksFromMd(str);
+* Como herramienta de planificación, creamos un calendario con las actividades a cumplir para poder así seguir la planificación de Laboratoria y llevar a cabo nuestro proyecto en el tiempo estimado.
 
-console.log(links);
-// [
-//   { href: 'https://en.wiktionary.org/wiki/labore', text: 'labore' },
-//   { href: 'https://en.wiktionary.org/wiki/dolore', text: 'dolore' },
-//   { href: 'http://foo.com', text: 'foo' },
-// ]
+
+### Requerimientos Técnicos
+
+* Dependencias de Desarrollo
+  
+  + Node Js
+  + Package Json.
+  + ESLint ~v.4.15.0
+  
+
+
+
+* Dependecias de Producción
+  
+  + Bootstrap ~v.4.0.0
+  + jQuery ~v.3.1.1
+  
+
+### Configuración ambiente de desarrollo
+
+* Hacer npm init
+* Instalar npm
+* Instalar package
+* Crear el archivo .gitignore
 ```
