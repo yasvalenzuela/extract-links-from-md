@@ -30,9 +30,9 @@ ExtractLinksFronMd trata de crear nuestra propia librería para implementar un m
 
 * Dependecias de Producción
   
-  + jQuery ~v.3.1.1
   + Bootstrap ~v.4.0.0
-  
+  + jQuery ~v.3.1.1
+
 
 ### Configuración ambiente de desarrollo
 
