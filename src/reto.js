@@ -1,28 +1,49 @@
-const readline = require("readline");
+
+'use strict'
+const URL = {};
+//const http = require('http');
+// const readline = require("readline");
 const fs = require('fs');
 
-const url = readline.createInterface({
-  input: fs.createReadStream('markdown.md')
-});
-
-
-// /(\[(.*?)\])/g = esta expresion regular reconoce texto entre [];
-// /([^"'\s]+)/g = esta expresion regular reconoce los url que estan dentro del texto markdown
-const links = /(\[(.*?)\]\([^"'\s]+)/g;
-
-const newVar = url.match(links => links);
- //url.match(links); // funciona por mientras solo con un texto
-
-
 /*
-* const names = ['PAULA', 'MARCIA', 'CAMILA', 'SABRINA'];
-* const namesLower = names.map(element => element.toLowerCase());
+* let urls = readline.createInterface({
+*  input: fs.createReadStream('markdown.md', 'utf8')
+*  crlfDelay: Infinity
+* });
 */
 
 
+/*fs.readFile('markdown.md', 'utf8', (err, text) => {
+  const regularExpression = /(\[(.*?)\]\([^"'\s]+)/g;
+  let read = text.match(regularExpression)
+  return read;
+});*/
 
+URL.searchLink = (link) => {
+  const regularExpression = /([^"'\s]+)/g;
+  let links = link.match(regularExpression);
+  return links;
+}
 
-    //text = (markdown.md),
-    //encontrados = text.match(links);
+URL.searchText = (txt) => {
+  const regularExpression = /(\[(.*?)\])/g;
+  let text = txt.match(regularExpression);
+  if (text !== '') {
+    return text;
+  }
+}
 
-    //console.log(encontrados)
+URL.results = (text) => {
+  let links = fs.readFile(err, text);
+  let total = links.filter((e) => {
+    let url = URL.url(e);
+    let text = URL.text(e);
+    let object = {href: url, text: text}
+    return object;
+  })
+  return total;
+}
+
+console.log(URL);
+
+module.exports = URL;
