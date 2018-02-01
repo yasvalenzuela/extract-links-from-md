@@ -23,10 +23,4 @@ describe('Comprobar que extrae texto', () => {
   });
 });
 
-/*
-describe('Comprobar que devuelve un arreglo de objetos', () => {
-  it('Debe retornar un arreglo de objetos con sus respectivos atributos', () => {
-    chai.assert.equal(URL.linksExtract(texto), ('[{href: https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s, text: ingles},{href: https://es.wikipedia.org/wiki/Drama, text: drama},{https://es.wikipedia.org/wiki/Verso, text: verso},{https://es.wikipedia.org/wiki/Romanticismo, text:románticos}]'), true);
-    // expect(URL.extractLinksTotal(text)).to.be.equal('{href: http://www.google.cl, text: palabra}');
-  });
-});
+
