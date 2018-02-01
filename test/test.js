@@ -1,23 +1,32 @@
+const assert = require('assert');
 const chai = require('chai');
-const URL = require('../src/reto.js');
-const string = 'Proserpina, un drama mitológico en dos actos, cuyo título original en [ingles](https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s) es Proserpine, a mythological [drama](https://es.wikipedia.org/wiki/Drama) in two acts, es un drama en [verso](https://es.wikipedia.org/wiki/Verso)'
-
-describe ('validar URL', () => {
-  it('Debe comprobar el formato', () => {
-    chai.assert.equal(URL.searchLink('https://google.com'), true);
-    chai.assert.equal(URL.searchLink('google'), false);
-  })
-
-  it('Verifica el formato del texto', () => {
-    chai.assert.equal(URL.searchText('[texto]'), 'true');
-    chai.assert.equal(URL.searchText('texto'), false);
-  })
-
-  it('Devuelve si es un objeto de arreglos', () => {
-    chai.assert.equal(URL.results(), '{href: www.link.com, text: text}')
-  })
+const expect = chai.expect;
+const URL = require('../src/extract-links-from-md.js');
+const fs = require('fs');
+let texto = fs.readFileSync('./markdown.md').toString()
 
 
-  
+describe('Comprobar que extrae links', () => {
+  it('Debe retornar links de un texto', () => {
+    chai.assert.equal(URL.extractLinks(texto), ('https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s,https://es.wikipedia.org/wiki/Drama,https://es.wikipedia.org/wiki/Verso,https://es.wikipedia.org/wiki/Romanticismo'
+), true);
+    //chai.assert.equal(URL.extractLinks, ('[http://www.google.cl]'), undefined);
+    //expect(URL.extractLinks.to.be.equal('http://www.google.cl'));
+  });
+});
 
+describe('Comprobar que extrae texto', () => {
+  it('Debe retornar texto que se encuentra en []', () => {
+    chai.assert.equal(URL.extractTexts(texto), ('[ingles],[drama],[verso],[románticos]'), true);
+    //chai.assert.equal(URL.extractTexts, ('(palabra)'), false);
+    // expect(URL.extractText(text)).to.be.equal('[palabra]');
+  });
+});
+
+/*
+describe('Comprobar que devuelve un arreglo de objetos', () => {
+  it('Debe retornar un arreglo de objetos con sus respectivos atributos', () => {
+    chai.assert.equal(URL.linksExtract(texto), ('[{href: https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s, text: ingles},{href: https://es.wikipedia.org/wiki/Drama, text: drama},{https://es.wikipedia.org/wiki/Verso, text: verso},{https://es.wikipedia.org/wiki/Romanticismo, text:románticos}]'), true);
+    // expect(URL.extractLinksTotal(text)).to.be.equal('{href: http://www.google.cl, text: palabra}');
+  });
 });
