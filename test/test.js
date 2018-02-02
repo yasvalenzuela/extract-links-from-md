@@ -28,12 +28,9 @@ describe('Comprobar que extrae texto', () => {
 
 describe('Comprobar que devuelve un arreglo de objetos', () => {
   it('Debe retornar un arreglo de objetos', () => {
-    chai.assert.equal(URL.extractLinksAndTexts(texto), ([
-      {href: 'https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s', text: '[ingles]'},
-      {href: 'https://es.wikipedia.org/wiki/Drama', text: '[drama]'},
-      {href: 'https://es.wikipedia.org/wiki/Verso', text: '[verso]'},
-      {href: 'https://es.wikipedia.org/wiki/Romanticismo', text: '[románticos]'}
-    ]), true);
+    chai.assert.equal(URL.total(texto), (
+      '[{"href":"https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s","text":"[ingles]"},{"href":"https://es.wikipedia.org/wiki/Drama","text":"[drama]"},{"href":"https://es.wikipedia.org/wiki/Verso","text":"[verso]"},{"href":"https://es.wikipedia.org/wiki/Romanticismo","text":"[románticos]"}]'
+    ), true);
     // expect(URL.extractLinksAndText(texto)).to.be.equal('[{href: "https://es.wikipedia.org/wiki/Drama", text: "[ingles]"},{href: "https://es.wikipedia.org/wiki/Drama", text: "[drama]"},{href: "https://es.wikipedia.org/wiki/Verso", text: "[verso]"},{href: "https://es.wikipedia.org/wiki/Romanticismo", text: "[románticos]"}]');
   });
 });
