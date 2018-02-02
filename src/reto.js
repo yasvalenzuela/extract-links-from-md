@@ -25,6 +25,10 @@ URL.extractTexts = (texto) => {
 // URL.extractTexts(texto);
 
 //funcion que extra texto en [] y link en ()
+
+
+let linksTotal = URL.extractLinks(texto);
+let txtTotal = URL.extractTexts(texto);
 URL.extractLinksAndTexts = (texto) => {
   const regularExpression = /\[(.*?)\]|[-a-zA-Z0-9@:%_\+.~#?&//=]{2,256}\.[a-z]{2,4}\b(\/[-a-zA-Z0-9@:%_\+.~#?&//=]*)?/gi;
   let totalLinks = texto.match(regularExpression);
@@ -46,6 +50,12 @@ URL.total = (texto) => {
   }
   console.log(result);
   return JSON.stringify(result); // convierte un valor dado en javascript a una cadena JSON si no esta no funciona
+};
+    j++;
+    }
+  }
+  return url;
+  // console.log(url);
 };
 
 URL.total(texto);
