@@ -51,12 +51,7 @@ URL.total = (texto) => {
   console.log(result);
   return JSON.stringify(result); // convierte un valor dado en javascript a una cadena JSON si no esta no funciona
 };
-    j++;
-    }
-  }
-  return url;
-  // console.log(url);
-};
+
 
 URL.total(texto);
 

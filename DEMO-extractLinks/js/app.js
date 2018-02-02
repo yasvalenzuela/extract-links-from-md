@@ -1,10 +1,5 @@
-'use strict';
 const URL = {};
-// const http = require('http');
-// const readline = require("readline");
-const fs = require('fs');
-let texto = fs.readFileSync('../markdown.md').toString();
-// console.log(texto);
+let texto = 'Proserpina, un drama mitológico en dos actos, cuyo título original en [ingles](https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s) es Proserpine, a mythological [drama](https://es.wikipedia.org/wiki/Drama) in two acts, es un drama en [verso](https://es.wikipedia.org/wiki/Verso) escrito para niños por el matrimonio de escritores [románticos](https://es.wikipedia.org/wiki/Romanticismo)'
 
 // función que extrae solo los links
 URL.extractLinks = (texto) => {

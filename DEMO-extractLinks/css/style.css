@@ -45,5 +45,8 @@ section button {
 #newExtract{
   margin-top: 5%;
   width: 50%;
-
+  margin-left: 25%;
+  border: 1px solid #CD6155;
+  font-size: 20px;
+  font-family: 'Encode Sans Condensed', sans-serif;
 }

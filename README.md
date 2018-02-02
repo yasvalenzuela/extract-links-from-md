@@ -5,7 +5,7 @@ Una librería es un archivo o conjunto de archivos que se utilizan para facilita
 
 
 ## Descripción
-**markdown-extractLinks** es una libreria que tiene como finalidad extraer todos los links encontrados de un texto en formato markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
+**markdown-extract-links** es una libreria que tiene como finalidad extraer todos los links encontrados de un texto en formato markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
 
 
 ### Metodología del Trabajo
