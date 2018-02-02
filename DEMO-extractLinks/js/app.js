@@ -3,7 +3,7 @@ const URL = {};
 // const http = require('http');
 // const readline = require("readline");
 const fs = require('fs');
-let texto = fs.readFileSync('./markdown.md').toString();
+let texto = fs.readFileSync('../markdown.md').toString();
 // console.log(texto);
 
 
