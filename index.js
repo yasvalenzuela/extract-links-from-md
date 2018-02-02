@@ -1,3 +1,1 @@
-
-const URL = require("./src/reto.js");
-module.exports = URL;
+let texto = fs.readFileSync('DEMO-extractLinks/js/app.js').toString();

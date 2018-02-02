@@ -22,32 +22,3 @@ URL.extractLinks = (texto) => {
   return links;
   console.log(links);
 };
-
-/*URL.extractLinks(texto);
-
-URL.extractTexts = (texto) => {
-  const regularExpression = /\[(.*?)\]/g;
-  let txt = texto.match(regularExpression).toString();
-  if (txt !== '') {
-    return txt;
-  }
-  console.log(txt);
-};
-
-
-// URL.extractTexts(texto);
-/*
-URL.textAndLink = (err, text) => {
-  fs.readFile('markdown.md', 'utf8', (err, text) => {
-    const regularExpression = /(\[(.*?)\]\([^"'\s]+)/g;
-    let read = text.match(regularExpression).toString();
-    return read;
-  console.log(read);
-  });
-};*/
-
-
-
-module.exports = URL;
-
-
