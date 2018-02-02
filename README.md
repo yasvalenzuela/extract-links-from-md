@@ -4,10 +4,9 @@
 Una librería es un archivo o conjunto de archivos que se utilizan para facilitar la programación.
 
 
-## Reto
-### ExtractLinksFronMd
+## Descripción
+**ExtractLinks** es una libreria que tiene como finalidad extraer todos los links encontrados de un texto en formato markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
 
-ExtractLinksFronMd trata de crear nuestra propia librería para implementar un módulo de Node.js que reciba un string (en formato Markdown) y extraiga todos los links encontrados.
 
 ### Metodología del Trabajo
 
@@ -25,6 +24,8 @@ ExtractLinksFronMd trata de crear nuestra propia librería para implementar un m
   + Node Js
   + Package Json.
   + ESLint ~v.4.15.0
+  + Mocha
+  + Chai
   
 
 * Dependecias de Producción
@@ -33,10 +34,23 @@ ExtractLinksFronMd trata de crear nuestra propia librería para implementar un m
   + jQuery ~v.3.1.1
   
 
-### Configuración ambiente de desarrollo
-
+### Instalación
+#### NPM
 * Hacer npm init
-* Instalar npm
-* Instalar package
-* Crear el archivo .gitignore
+* Instala npm install --save ExtractLinks en la carpeta raíz de tu proyecto.
+* Modifica lo siguiente con tu archivo markdown
+  + let texto = fs.readFileSync('<markdown.md>').toString();
+* En tu consola, posiciónate en la carpeta raíz de tu proyecto y ejecuta 'node index.js'
+* El resultado será un objeto JSON, conteniendo cada link del archivo markdown seleccionado.
+
+'[
+  {"href":"https://es.wikipedia.org/wiki/Idioma_ingl%C3%A9s","text":"[ingles]"},
+  {"href":"https://es.wikipedia.org/wiki/Drama","text":"[drama]"},
+  {"href":"https://es.wikipedia.org/wiki/Verso","text":"[verso]"},
+  {"href":"https://es.wikipedia.org/wiki/Romanticismo","text":"[románticos]"}
+]'
+
+
+
+
 
