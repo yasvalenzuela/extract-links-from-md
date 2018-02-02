@@ -1,1 +1,4 @@
-let texto = fs.readFileSync('DEMO-extractLinks/js/app.js').toString();
+const URL = require("./src/extract-links-from-md.js");
+let texto = fs.readFileSync('../markdown.md').toString();
+
+module.exports = URL;
