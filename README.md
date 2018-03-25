@@ -17,6 +17,7 @@ Una librería es un archivo o conjunto de archivos que se utilizan para facilita
 * Como herramienta de planificación, creamos un calendario con las actividades a cumplir para poder así seguir la planificación de Laboratoria y llevar a cabo nuestro proyecto en el tiempo estimado.
 
 
+
 ### Requerimientos Técnicos
 
 * Dependencias de Desarrollo
