@@ -1,12 +1,8 @@
-
 # Librería en Javascript
-
 Una librería es un archivo o conjunto de archivos que se utilizan para facilitar la programación.
-
 
 ## Descripción
 **markdown-extract-links** es una libreria que tiene como finalidad extraer todos los links encontrados de un texto en formato markdown. Puedes instalarlo como módulo en Node.js o implementarlo en tu página web.
-
 
 ### Metodología del Trabajo
 
@@ -15,8 +11,6 @@ Una librería es un archivo o conjunto de archivos que se utilizan para facilita
 * Se utiliza la metodología Agile para poder mejorar la eficiencia en relación al tiempo de producción y calidad del producto final.
 
 * Como herramienta de planificación, creamos un calendario con las actividades a cumplir para poder así seguir la planificación de Laboratoria y llevar a cabo nuestro proyecto en el tiempo estimado.
-
-
 
 ### Requerimientos Técnicos
 
@@ -33,7 +27,6 @@ Una librería es un archivo o conjunto de archivos que se utilizan para facilita
   
   + Bootstrap ~v.4.0.0
   + jQuery ~v.3.1.1
-  
 
 ### Instalación
 #### NPM
