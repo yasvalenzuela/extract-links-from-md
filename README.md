@@ -45,6 +45,8 @@ Una librería es un archivo o conjunto de archivos que se utilizan para facilita
 ]'
 
 
+![demo](src/img/extralinks.png)
 
+# Desarrollado para 
 
-
+## [Laboratoria](http://laboratoria.la/)
