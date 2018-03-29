@@ -1,42 +1,9 @@
-# Librería en Javascript
-
-Una librería es un archivo o conjunto de archivos que se utilizan para facilitar la programación.
-
-
-## Reto
-### ExtractLinksFronMd
-
-ExtractLinksFronMd trata de crear nuestra propia librería para implementar un módulo de Node.js que reciba un string (en formato Markdown) y extraiga todos los links encontrados.
-
-### Metodología del Trabajo
-
-* Herramienta de comunicación Slack, para estar en constante comunicación y poder cumplir con nuestra planificación.
-
-* Se utiliza la metodología Agile para poder mejorar la eficiencia en relación al tiempo de producción y calidad del producto final.
-
-* Como herramienta de planificación, creamos un calendario con las actividades a cumplir para poder así seguir la planificación de Laboratoria y llevar a cabo nuestro proyecto en el tiempo estimado.
-
-
-### Requerimientos Técnicos
-
-* Dependencias de Desarrollo
-  
-  + Node Js
-  + Package Json.
-  + ESLint ~v.4.15.0
-  
+## ExtractLinksFronMd
+Extra links es una libreria desarrollada para el area Back-end, la cual tiene como finalidad extraer links de un texto en formato markdown y los devuelve en un arreglo de objetos. Debe cambiarse de rama a retoNode.
 
 
 
-* Dependecias de Producción
+![extralinks](https://user-images.githubusercontent.com/32285473/38064916-ec2b6c1a-32d6-11e8-9d65-3b1430b1d875.png)
 
-  + jQuery ~v.3.1.1
-  + Bootstrap ~v.4.0.0
-  
-
-### Configuración ambiente de desarrollo
-
-* Hacer npm init
-* Instalar npm
-* Instalar package
-* Crear el archivo .gitignore
+# Desarrollado para
+![Laboratoria](http://www.laboratoria.cl/)
