@@ -7,4 +7,4 @@ Extra links es una libreria desarrollada para el area Back-end, la cual tiene co
 
 # Desarrollado para
 
-![Laboratoria](http://www.laboratoria.cl/)
+## [Laboratoria](http://laboratoria.la/)
